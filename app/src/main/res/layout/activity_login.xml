@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:layout_gravity="center"
+    android:id="@+id/container"
+    android:gravity="top"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingBottom="20dp">
+
+        <com.asitrack.fontawesome2.FontAwesome.FontAwesomeSolidView
+            android:id="@+id/fontAwesomeSolidView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="&#xf007;"
+            android:textColor="@color/colorLight"
+            android:textSize="@dimen/icon_large" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/registration_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_bg"
+        android:fontFamily="sans-serif"
+        android:hint="Registration number"
+        android:inputType="textCapCharacters"
+        android:textColor="@color/colorLight"
+        android:textColorHint="@color/colorGrayLight"
+        android:textSize="@dimen/text_regular"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="10dp"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_bg"
+        android:fontFamily="sans-serif"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@color/colorLight"
+        android:textColorHint="@color/colorGrayLight"
+        android:textSize="@dimen/text_regular"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="60dp"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:background="@drawable/success_button_bg"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"/>
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/login_progress"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorGrayLight"
+                android:text="Not yet a Member?" />
+
+            <Button
+                android:id="@+id/register_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/transparent_btn_bg"
+                android:textColor="@color/colorLight"
+                android:text="Register"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

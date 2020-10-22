@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SlauElite</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+
+    <string name="title_activity_splash_screen">SplashScreenActivity</string>
+
+    <string name="logo_desc">Logo</string>
+    <string name="welcome">Welcome</string>
+
+    <!-- Register activity string constants -->
+    <string-array name="faculties">
+        <item>--Select Faculty--</item>
+        <item>Education</item>
+        <item>Art</item>
+        <item>Technology</item>
+        <item>Humanities</item>
+        <item>Business</item>
+    </string-array>
+
+
+    <string-array name="education">
+        <item>--Select Course--</item>
+        <item>Bachelor of Arts with Education</item>
+        <item>Diploma in Secondary Education (Arts)</item>
+        <item>Foundation Certificate Programme (FDP)</item>
+        <item>Diploma in Primary Education 2Years ( In-service)</item>
+        <item>Bachelor of Education (Primary) 2years ( In-service)</item>
+        <item>Bachelor of Education (Secondary) 2years ( In-serve)"];</item>
+    </string-array>
+
+    <string-array name="education_cc">
+        <item>--</item>
+        <item>bwed</item>
+        <item>dise</item>
+        <item>cfcp</item>
+        <item>dipe</item>
+        <item>bepd</item>
+        <item>beds</item>
+    </string-array>
+
+    <string-array name="technology">
+        <item>--Select Course--</item>
+        <item>Bachelor of Telecommunication Engineering</item>
+        <item>Bachelor of Science in Computer Engineering</item>
+        <item>Bachelor of Science in Information Systems</item>
+        <item>Bachelor of information Technology</item>
+        <item>Bachelor of Statistics</item>
+        <item>Bachelor of Science in Computer Science</item>
+        <item>Bachelor of Library and Information Science</item>
+        <item>Bachelor of Records and Archives Management</item>
+        <item>Diploma in Library and Information Science</item>
+        <item>Diploma in Information Technology</item>
+        <item>Diploma in Computer Science</item>
+        <item>Diploma in Records and Archives Management</item>
+    </string-array>
+
+    <string-array name="technology_cc">
+        <item>--</item>
+        <item>bste</item>
+        <item>bsce</item>
+        <item>bais</item>
+        <item>bait</item>
+        <item>bast</item>
+        <item>bacs</item>
+        <item>bali</item>
+        <item>bara</item>
+        <item>dili</item>
+        <item>diit</item>
+        <item>dics</item>
+        <item>dira</item>
+    </string-array>
+
+    <string-array name="business">
+        <item>--Select Course--</item>
+        <item>Bachelor of Human Resource Management</item>
+        <item>Bachelor of Business Administration</item>
+        <item>Bachelor of Business Administration/Business Computing</item>
+        <item>Bachelor of Business Administration/International Business</item>
+        <item>Bachelor of Business Administration/Entrepreneurship</item>
+        <item>Bachelor of Business Administration/Marketing Management</item>
+        <item>Bachelor of Business Administration/Accounting</item>
+        <item>Bachelor of Business Administration/Banking and Finance</item>
+        <item>Bachelor of Procurement and Supplies Chain Management</item>
+        <item>Diploma in Business Administration</item>
+        <item>Diploma in Finance and Business</item>
+    </string-array>
+
+    <string-array name="business_cc">
+        <item>--</item>
+        <item>bhrm</item>
+        <item>baba</item>
+        <item>babc</item>
+        <item>babi</item>
+        <item>babe</item>
+        <item>babm</item>
+        <item>babt</item>
+        <item>babf</item>
+        <item>bpsc</item>
+        <item>diba</item>
+        <item>difb</item>
+    </string-array>
+
+    <string-array name="art">
+        <item>--Select Course--</item>
+        <item>Bachelor of Industrial Art</item>
+        <item>Diploma in Industrial Art</item>
+    </string-array>
+
+    <string-array name="art_cc">
+        <item>--</item>
+        <item>bart</item>
+        <item>dart</item>
+    </string-array>
+
+    <string-array name="humanities">
+        <item>--Select Course--</item>
+        <item>Bachelor of Mass Communication</item>
+        <item>Bachelor of Social Work and Social Admin</item>
+        <item>Bachelor of Economics</item>
+        <item>Bachelor of Guidance and Counseling</item>
+        <item>Bachelor of Public Administration and Management</item>
+        <item>Bachelor of Diplomacy and International Relations</item>
+        <item>Bachelor of Environment Management</item>
+        <item>Bachelor of Local Governance and Human Rights</item>
+        <item>Bachelor of Development Studies</item>
+        <item>Bachelor of Arts Degrees</item>
+        <item>Bachelor of Administrative and Secretarial Studies</item>
+        <item>Bachelor of Science in Public Health</item>
+        <item>Bachelor of Tourism and Hospitality Management</item>
+        <item>Diploma in Tourism and Hospitality Management</item>
+        <item>Diploma in Administration and Secretarial Studies</item>
+        <item>Diploma in Guidance and Counseling</item>
+        <item>Diploma in Mass Communication and Journalism</item>
+        <item>Diploma in Public Administration and Management</item>
+        <item>Diploma in Development Studies</item>
+    </string-array>
+
+    <string-array name="humanities_cc">
+        <item>--</item>
+        <item>bamc</item>
+        <item>basw</item>
+        <item>baec</item>
+        <item>bagc</item>
+        <item>bapa</item>
+        <item>badi</item>
+        <item>baev</item>
+        <item>balg</item>
+        <item>bads</item>
+        <item>baaa</item>
+        <item>bass</item>
+        <item>baph</item>
+        <item>bath</item>
+        <item>diss</item>
+        <item>digc</item>
+        <item>dimc</item>
+        <item>dipa</item>
+        <item>dids</item>
+    </string-array>
+
+    <string-array name="four_years">
+        <item>--Select Year--</item>
+        <item>Year 4</item>
+        <item>Year 3</item>
+        <item>Year 2</item>
+        <item>Year 1</item>
+    </string-array>
+
+    <string-array name="three_years">
+        <item>--Select Year--</item>
+        <item>Year 3</item>
+        <item>Year 2</item>
+        <item>Year 1</item>
+    </string-array>
+
+    <string-array name="two_years">
+        <item>--Select Year--</item>
+        <item>Year 2</item>
+        <item>Year 1</item>
+    </string-array>
+
+    <string-array name="one_year">
+        <item>--Select Year--</item>
+        <item>Year 1</item>
+    </string-array>
+
+    <string-array name="sex">
+        <item>--Sex--</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+</resources>
