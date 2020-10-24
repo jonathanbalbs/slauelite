@@ -3,11 +3,17 @@ package com.example.slauelite;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.provider.BaseColumns;
 import android.transition.Explode;
 import android.view.Window;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class SplashScreen extends AppCompatActivity {
 
@@ -28,10 +34,21 @@ public class SplashScreen extends AppCompatActivity {
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
-                    Intent intent = new Intent(SplashScreen.this, RegisterActivity.class);
-                    startActivity(intent);
+                    MyDatabaseHandler dbHandler = new MyDatabaseHandler(getApplicationContext());
+                    SQLiteDatabase db = dbHandler.getReadableDatabase();
+                    UserContract uc = new UserContract();
 
-                    finish();
+                    Cursor cursor = db.query(uc.getTableName(), null, null, null, null, null, null);
+
+                    if (cursor.getCount() > 0) {
+                        Intent intent = new Intent(SplashScreen.this, MainActivity.class);
+                        startActivity(intent);
+                        finish();
+                    }else {
+                        Intent intent = new Intent(SplashScreen.this, LoginActivity.class);
+                        startActivity(intent);
+                        finish();
+                    }
                 }
             }, secondsDelayed * 1000);
 

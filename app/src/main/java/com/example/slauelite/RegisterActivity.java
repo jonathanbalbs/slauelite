@@ -3,11 +3,12 @@ package com.example.slauelite;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.DialogFragment;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.content.ContentValues;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Build;
 import android.os.Bundle;
 import android.transition.Slide;
@@ -144,6 +145,24 @@ public class RegisterActivity extends AppCompatActivity implements AdapterView.O
                                     String responseMessage = jsonObject.getString("message");
 
                                     if (responseMessage.equals("true")) {
+                                        //insert data into local database
+                                        MyDatabaseHandler dbHandler = new MyDatabaseHandler(getApplicationContext());
+                                        SQLiteDatabase db = dbHandler.getWritableDatabase();
+
+                                        ContentValues cv = new ContentValues();
+                                        UserContract uc = new UserContract();
+
+                                        cv.put(uc.getEmail(), email);
+                                        cv.put(uc.getRegNumber(), registrationNumber);
+                                        cv.put(uc.getFaculty(), faculty);
+                                        cv.put(uc.getCourse(), course);
+                                        cv.put(uc.getYear(), year);
+                                        cv.put(uc.getPhone(), phone);
+                                        cv.put(uc.getPassword(), password);
+                                        cv.put(uc.getFullName(), name);
+
+                                        db.insert(uc.getTableName(), null, cv);
+
                                         Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
                                         startActivity(intent);
                                         finish();

@@ -4,7 +4,9 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
+import android.content.ContentValues;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
@@ -81,6 +83,23 @@ public class LoginActivity extends AppCompatActivity {
                                     String responseMessage = jsonObject.getString("message");
 
                                     if (responseMessage.equals("true")) {
+                                        JSONObject dt = jsonObject.getJSONObject("data");
+                                        MyDatabaseHandler dbHandler = new MyDatabaseHandler(getApplicationContext());
+                                        SQLiteDatabase db = dbHandler.getWritableDatabase();
+
+                                        ContentValues cv = new ContentValues();
+                                        UserContract uc = new UserContract();
+
+                                        cv.put(uc.getFullName(), dt.getString("name"));
+                                        cv.put(uc.getEmail(), dt.getString("email"));
+                                        cv.put(uc.getPhone(), dt.getString("phone"));
+                                        cv.put(uc.getRegNumber(), dt.getString("reg_number"));
+                                        cv.put(uc.getFaculty(), dt.getString("faculty"));
+                                        cv.put(uc.getCourse(), dt.getString("course"));
+                                        cv.put(uc.getYear(), dt.getString("year"));
+
+                                        db.execSQL(uc.getSqlCreateUser());
+
                                         Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                                         startActivity(intent);
                                         finish();
