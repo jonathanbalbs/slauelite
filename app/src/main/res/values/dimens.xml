@@ -9,4 +9,8 @@
     <!--font-size dimens -->
     <dimen name="text_regular">15sp</dimen>
     <dimen name="icon_large">60sp</dimen>
+
+    <!-- sizes -->
+    <dimen name="dp_50">50dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
 </resources>

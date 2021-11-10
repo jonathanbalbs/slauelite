@@ -104,4 +104,20 @@
 
     </LinearLayout>
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="@dimen/dp_20"
+        >
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/rounded_corners_light_bg"
+            android:contentDescription="@string/logo_desc"
+            android:src="@drawable/lg_sm" />
+
+    </RelativeLayout>
+
 </LinearLayout>

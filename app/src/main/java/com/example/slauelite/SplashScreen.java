@@ -8,12 +8,8 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
-import android.provider.BaseColumns;
 import android.transition.Explode;
 import android.view.Window;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class SplashScreen extends AppCompatActivity {
 
@@ -29,8 +25,7 @@ public class SplashScreen extends AppCompatActivity {
         if (!splashLoaded){
             setContentView(R.layout.activity_splash_screen);
 
-
-            final int secondsDelayed = 3;
+            final int secondsDelayed = 5;
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
@@ -54,7 +49,7 @@ public class SplashScreen extends AppCompatActivity {
 
             splashLoaded = true;
         } else {
-            Intent intent = new Intent(SplashScreen.this, RegisterActivity.class);
+            Intent intent = new Intent(SplashScreen.this, LoginActivity.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
             startActivity(intent);
             finish();
