@@ -21,12 +21,14 @@ public final class UserContract {
     public  static final String FACULTY = "faculty";
     public  static final String COURSE = "course";
     public  static final String YEAR = "year";
+    public  static final String ACCESS_TOKEN = "access_token";
 
     //sql query strings
     public  static final String SQL_CREATE_USER = "CREATE TABLE " + TABLE_NAME + "(" +
             ID + " INTEGER PRIMARY KEY," + FULL_NAME + " VARCHAR(64), " + REG_NUMBER +
             " VARCHAR(32), " + PHONE + " VARCHAR(16), " + EMAIL + " VARCHAR(128), " + PASSWORD +
-            " VARCHAR(255), " + FACULTY + " VARCHAR(8), " + COURSE + " VARCHAR(64), " + YEAR + " VARCHAR(8))";
+            " VARCHAR(255), " + FACULTY + " VARCHAR(8), " + COURSE + " VARCHAR(64), " + YEAR + " VARCHAR(8), " +
+            ACCESS_TOKEN + " VARCHAR(256))" ;
 
     public  static final String SQL_DELETE_TABLE = "DROP TABLE IF EXISTS " + TABLE_NAME;
 
@@ -58,7 +60,8 @@ public final class UserContract {
     public String getYear() {
         return YEAR;
     }
-    public  String getTableName() {
+    public String getAccessToken() { return ACCESS_TOKEN; }
+    public String getTableName() {
         return TABLE_NAME;
     }
 
