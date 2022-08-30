@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/emma/StudioProjects/slauelite/app/src/main/res/layout/activity_login.xml" value="0.1933876811594203" />
+        <entry key="..\:/Users/emma/StudioProjects/slauelite/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/emma/StudioProjects/slauelite/app/src/main/res/layout/fragment_events.xml" value="0.17481884057971014" />
         <entry key="..\:/Users/user/AndroidStudioProjects/slau/app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="..\:/Users/user/AndroidStudioProjects/slau/app/src/main/res/layout/activity_register.xml" value="0.12771739130434784" />
         <entry key="..\:/Users/user/AndroidStudioProjects/slau/app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />

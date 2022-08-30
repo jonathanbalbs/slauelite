@@ -2,6 +2,7 @@ package com.example.slauelite.ui.main;
 
 import android.content.Context;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
 import androidx.fragment.app.Fragment;
@@ -17,7 +18,8 @@ import com.example.slauelite.R;
 public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
     @StringRes
-    private static final int[] TAB_TITLES = new int[]{R.string.tab_text_1, R.string.tab_text_2};
+    private static final int[] TAB_TITLES = new int[]{R.string.home_tab_1, R.string.home_tab_2, R.string.home_tab_3};
+    private static final int[] TAB_ICONS = new int[]{R.string.fa_calendar_check_solid, R.string.fa_book_solid, R.string.fa_search_solid};
     private final Context mContext;
 
     public SectionsPagerAdapter(Context context, FragmentManager fm) {
@@ -25,22 +27,45 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
         mContext = context;
     }
 
+    @NonNull
     @Override
     public Fragment getItem(int position) {
         // getItem is called to instantiate the fragment for the given page.
-        // Return a PlaceholderFragment (defined as a static inner class below).
-        return PlaceholderFragment.newInstance(position + 1);
+
+        Fragment fragment;
+
+        switch (position) {
+            case 0:
+                fragment = new EventsFragment();
+                break;
+            case 1:
+                fragment = new LibraryFragment();
+                break;
+            default:
+                fragment = new NewsFragment();
+                break;
+        }
+
+
+        return fragment;
     }
 
     @Nullable
     @Override
     public CharSequence getPageTitle(int position) {
-        return mContext.getResources().getString(TAB_TITLES[position]);
+        CharSequence title;
+
+        CharSequence icon = mContext.getResources().getString(TAB_ICONS[position]);
+        CharSequence text = mContext.getResources().getString(TAB_TITLES[position]);
+
+        title = icon + " " + text;
+
+        return title;
     }
 
     @Override
     public int getCount() {
-        // Show 2 total pages.
-        return 2;
+        // Show 3 total pages.
+        return 3;
     }
 }

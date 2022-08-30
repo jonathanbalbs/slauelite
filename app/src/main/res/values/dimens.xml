@@ -5,10 +5,14 @@
     <dimen name="appbar_padding">16dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="appbar_padding_top">8dp</dimen>
+    <dimen name="appbar_padding_custom">8dp</dimen>
 
     <!--font-size dimens -->
+    <dimen name="appbar_icon_size">50dp</dimen>
     <dimen name="text_regular">15sp</dimen>
+    <dimen name="text_small">10sp</dimen>
     <dimen name="icon_large">60sp</dimen>
+
 
     <!-- sizes -->
     <dimen name="dp_50">50dp</dimen>

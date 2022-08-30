@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">SlauElite</string>
-    <string name="tab_text_1">Tab 1</string>
-    <string name="tab_text_2">Tab 2</string>
+    <string name="app_name">Slau</string>
+    <string name="home_tab_1">Events</string>
+    <string name="home_tab_2">Library</string>
+    <string name="home_tab_3">News</string>
 
     <string name="title_activity_splash_screen">SplashScreenActivity</string>
 
@@ -190,4 +191,6 @@
         <item>Male</item>
         <item>Female</item>
     </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
