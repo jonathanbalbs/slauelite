@@ -19,7 +19,6 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
     @StringRes
     private static final int[] TAB_TITLES = new int[]{R.string.home_tab_1, R.string.home_tab_2, R.string.home_tab_3};
-    private static final int[] TAB_ICONS = new int[]{R.string.fa_calendar_check_solid, R.string.fa_book_solid, R.string.fa_search_solid};
     private final Context mContext;
 
     public SectionsPagerAdapter(Context context, FragmentManager fm) {
@@ -53,14 +52,10 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
     @Nullable
     @Override
     public CharSequence getPageTitle(int position) {
-        CharSequence title;
 
-        CharSequence icon = mContext.getResources().getString(TAB_ICONS[position]);
         CharSequence text = mContext.getResources().getString(TAB_TITLES[position]);
 
-        title = icon + " " + text;
-
-        return title;
+        return text;
     }
 
     @Override
