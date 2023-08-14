@@ -90,7 +90,7 @@
 
     <string-array name="business_cc">
         <item>--</item>
-        <item>bhrm</item>
+        <item>bahr</item>
         <item>baba</item>
         <item>babc</item>
         <item>babi</item>
@@ -98,7 +98,7 @@
         <item>babm</item>
         <item>babt</item>
         <item>babf</item>
-        <item>bpsc</item>
+        <item>baps</item>
         <item>diba</item>
         <item>difb</item>
     </string-array>
@@ -153,6 +153,7 @@
         <item>bass</item>
         <item>baph</item>
         <item>bath</item>
+        <item>dith</item>
         <item>diss</item>
         <item>digc</item>
         <item>dimc</item>

@@ -11,4 +11,7 @@
     <color name="colorDark">#000000</color>
     <color name="colorGrayLight">#aaa</color>
     <color name="colorGrayDark">#5c5c5c</color>
+    <!-- tailwind colors -->
+    <color name="redTW">#f44336</color>
+    <color name="pinkTW">#e91e63</color>
 </resources>

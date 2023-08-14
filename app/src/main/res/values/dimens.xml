@@ -7,6 +7,7 @@
     <dimen name="appbar_padding_top">8dp</dimen>
     <dimen name="appbar_padding_custom">8dp</dimen>
 
+
     <!--font-size dimens -->
     <dimen name="appbar_icon_size">50dp</dimen>
     <dimen name="text_regular">15sp</dimen>
@@ -17,4 +18,10 @@
     <!-- sizes -->
     <dimen name="dp_50">50dp</dimen>
     <dimen name="dp_20">20dp</dimen>
+
+    <!-- other activities -->
+    <dimen name="splash_screen_logo">100dp</dimen>
+    <dimen name="splash_screen_padding">15dp</dimen>
+
+    <dimen name="padding_no_auth_container">10dp</dimen>
 </resources>

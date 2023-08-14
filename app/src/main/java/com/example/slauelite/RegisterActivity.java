@@ -5,6 +5,7 @@ import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -103,13 +104,14 @@ public class RegisterActivity extends AppCompatActivity implements AdapterView.O
                 try {
                     JSONObject dataObject = new JSONObject();
                     dataObject.put("email", email);
-                    dataObject.put("reg_number", registrationNumber);
+                    dataObject.put("registration_number", registrationNumber);
                     dataObject.put("faculty", faculty);
                     dataObject.put("course", course);
                     dataObject.put("year", year);
-                    dataObject.put("phone", phone);
+                    dataObject.put("phone_number", phone);
                     dataObject.put("password", password);
                     dataObject.put("name", name);
+                    dataObject.put("device_name", Build.MODEL);
 
                     RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
                     JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, url, dataObject, jsonObject -> {

@@ -7,36 +7,34 @@
     android:background="@color/colorPrimary"
     android:gravity="center"
     android:orientation="vertical"
+    android:animateLayoutChanges="true"
     tools:context=".SplashScreen">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_gravity="center"
-        android:layout_weight="1"
+        android:layout_weight="2"
         android:gravity="center"
         android:orientation="horizontal">
 
         <RelativeLayout
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:layout_marginEnd="10dp">
+            android:layout_width="@dimen/splash_screen_logo"
+            android:layout_height="@dimen/splash_screen_logo"
+            android:gravity="center">
 
             <ImageView
+                android:id="@+id/useLogo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:padding="@dimen/splash_screen_padding"
                 android:background="@drawable/rounded_corners_light_bg"
-                android:contentDescription="@string/logo_desc"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
                 android:src="@drawable/lg_sm" />
 
         </RelativeLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/app_name"
-            android:textColor="@color/colorLight"
-            android:textSize="45sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -51,16 +49,8 @@
             style="@android:style/Widget.ProgressBar.Inverse"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:clickable="false"
-            android:paddingBottom="10dp" />
+            android:indeterminateDrawable="@drawable/progress"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif"
-            android:text="@string/welcome"
-            android:textColor="@color/colorLight"
-            android:textSize="24sp" />
     </LinearLayout>
 
 </LinearLayout>
